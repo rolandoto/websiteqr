@@ -15,23 +15,23 @@ type ServiceItem = {
 
 const qrItems: QrItem[] = [
   {
-    title: "WiFi · COCO",
+    title: "WiFi · ZELVA NEGRA",
     href: "https://example.com/wifi-coco",
     hint: "Conexión rápida y segura para huéspedes.",
   },
   {
     title: "Mi Hotel",
-    href: "https://example.com/my-hotel",
+    href: "https://drive.google.com/file/d/1_mYzZnhqTILv1ASn3I7FC5K7FnIjr91g/view?usp=drivesdk",
     hint: "Información general, políticas y mapas.",
   },
   {
-    title: "Conserjería",
+    title: "Span hands of gold massage",
     href: "https://example.com/concierge",
     hint: "Reservas, transporte y experiencias locales.",
   },
   {
-    title: "WhatsApp",
-    href: "https://wa.me/573001112233",
+    title: "Restaurante Ragazzi tradicion",
+    href: "https://ragazzitradicion.com",
     hint: "Atención en línea para solicitudes inmediatas.",
   },
 ];
@@ -64,7 +64,7 @@ const serviceItems: ServiceItem[] = [
   {
     icon: "🏊",
     title: "Piscina",
-    subtitle: "Abierta 7:00 am–10:00 pm",
+    subtitle: "Abierta 10:00 am–10:00 pm",
     description: "Zona de descanso con toallas y servicio de bebidas.",
   },
   {
@@ -78,19 +78,30 @@ const serviceItems: ServiceItem[] = [
 export default function Home() {
   return (
     <div className="relative isolate min-h-screen overflow-hidden bg-[#090909] text-zinc-100">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(177,145,79,0.28),_transparent_40%),linear-gradient(to_bottom,_rgba(0,0,0,0.15),_rgba(0,0,0,0.85))]" />
+      <div className="fixed inset-0 -z-10">
+          <Image
+            src="https://zelvanegra.co/wp-content/uploads/2025/02/fachada-zelva-negra-hotel-1536x2048.jpg"
+            alt=""
+            fill
+            className="object-cover object-top"
+            unoptimized
+            priority
+          />
+          {/* Capas de overlay */}
+          <div className="absolute inset-0 bg-[#040a04]/75" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,_rgba(20,60,10,0.55),_transparent_55%)]" />
+        </div>
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,_rgba(34,90,20,0.55),_transparent_55%),radial-gradient(ellipse_60%_40%_at_15%_30%,_rgba(20,70,15,0.35),_transparent_50%),radial-gradient(ellipse_50%_35%_at_85%_25%,_rgba(15,60,10,0.3),_transparent_45%),linear-gradient(to_bottom,_rgba(4,18,4,0.1),_rgba(2,10,2,0.92))]" />
       <div className="pointer-events-none absolute inset-0 opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:48px_48px]" />
-
       <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-14 px-6 py-12 md:px-12 md:py-16">
         <header className="flex flex-col items-center gap-4 text-center">
           <p className="text-xs tracking-[0.35em] text-[#b1914f]">MEDELLÍN · EST. 2020</p>
-          <h1 className="font-serif text-6xl tracking-[0.25em] text-[#e7dbc0] md:text-7xl">COCO</h1>
+          <h1 className="font-serif text-6xl tracking-[0.25em] text-[#e7dbc0] md:text-7xl">Hotel zelva negra</h1>
           <p className="max-w-2xl text-sm text-zinc-300 md:text-base">
             Accede a todos los servicios del hotel desde un solo panel: WiFi, atención
             por WhatsApp, horarios y experiencias durante tu estadía.
           </p>
         </header>
-
         <section className="grid gap-4 md:grid-cols-2">
           {qrItems.map((item) => (
             <article
@@ -117,7 +128,6 @@ export default function Home() {
             </article>
           ))}
         </section>
-
         <section className="space-y-6">
           <div className="text-center">
             <p className="text-xs tracking-[0.35em] text-[#b1914f]">SERVICIOS · SERVICES</p>
