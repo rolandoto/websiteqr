@@ -13,10 +13,17 @@ type ServiceItem = {
   description: string;
 };
 
+const wifiSSID = "WIFI_SELVA_NEGRA";       // nombre exacto de la red
+const wifiPassword = "familiagh"; // contraseña
+const wifiType = "WPA2";               // WPA, WEP, o nopass
+
+const wifiString = `WIFI:T:${wifiType};S:${wifiSSID};P:${wifiPassword};;`;
+
+
 const qrItems: QrItem[] = [
   {
     title: "WiFi · ZELVA NEGRA",
-    href: "https://example.com/wifi-coco",
+    href: wifiString,
     hint: "Conexión rápida y segura para huéspedes.",
   },
   {
@@ -26,7 +33,7 @@ const qrItems: QrItem[] = [
   },
   {
     title: "Span hands of gold massage",
-    href: "https://example.com/concierge",
+    href: "https://www.handsofgoldmassagemed.com",
     hint: "Reservas, transporte y experiencias locales.",
   },
   {
@@ -40,12 +47,12 @@ const serviceItems: ServiceItem[] = [
   {
     icon: "🛏️",
     title: "Habitaciones",
-    subtitle: "Check-in 3:00 pm · Check-out 12:00 pm",
+    subtitle: "Check-in 3:00 pm · Check-out 11:00 pm",
     description: "Early check-in / late check-out sujeto a disponibilidad.",
   },
   {
     icon: "🍽️",
-    title: "Restaurante",
+    title: "Restaurante Ragazzi tradicion",
     subtitle: "Desayuno 6:30–10:30 · Almuerzo 12:00–3:00 · Cena 6:00–10:00",
     description: "Opciones locales e internacionales con menú de temporada.",
   },
@@ -66,13 +73,7 @@ const serviceItems: ServiceItem[] = [
     title: "Piscina",
     subtitle: "Abierta 10:00 am–10:00 pm",
     description: "Zona de descanso con toallas y servicio de bebidas.",
-  },
-  {
-    icon: "🛎️",
-    title: "Concierge 24h",
-    subtitle: "Disponible todo el día",
-    description: "Soporte para traslados, city tours y solicitudes especiales.",
-  },
+  }
 ];
 
 export default function Home() {
@@ -80,7 +81,7 @@ export default function Home() {
     <div className="relative isolate min-h-screen overflow-hidden bg-[#090909] text-zinc-100">
       <div className="fixed inset-0 -z-10">
           <Image
-            src="https://zelvanegra.co/wp-content/uploads/2025/02/fachada-zelva-negra-hotel-1536x2048.jpg"
+            src="/fachada-zelva.jpg"
             alt=""
             fill
             className="object-cover object-top"
@@ -96,7 +97,7 @@ export default function Home() {
       <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-14 px-6 py-12 md:px-12 md:py-16">
         <header className="flex flex-col items-center gap-4 text-center">
           <p className="text-xs tracking-[0.35em] text-[#b1914f]">MEDELLÍN · EST. 2020</p>
-          <h1 className="font-serif text-6xl tracking-[0.25em] text-[#e7dbc0] md:text-7xl">Hotel zelva negra</h1>
+          <h1 className="font-serif text-6xl tracking-[0.25em] text-[#e7dbc0] md:text-7xl">Hotel Zelva Negra</h1>
           <p className="max-w-2xl text-sm text-zinc-300 md:text-base">
             Accede a todos los servicios del hotel desde un solo panel: WiFi, atención
             por WhatsApp, horarios y experiencias durante tu estadía.
