@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hotel COCO | Guest Services",
+  title: "Hotel zelva negra",
   description: "Portal de servicios para huéspedes: check-in, restaurante, minibar y concierge.",
 };
 

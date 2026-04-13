@@ -41,6 +41,11 @@ const qrItems: QrItem[] = [
     href: "https://ragazzitradicion.com",
     hint: "Atención en línea para solicitudes inmediatas.",
   },
+   {
+    title: "Minibar",
+    href: "https://zelvanegra.vercel.app/minibar.png",
+    hint: "Atención en línea para solicitudes inmediatas.",
+  },
 ];
 
 const serviceItems: ServiceItem[] = [
@@ -103,12 +108,11 @@ export default function Home() {
             por WhatsApp, horarios y experiencias durante tu estadía.
           </p>
         </header>
-        <section className="grid gap-4 md:grid-cols-2">
+        <section className="grid gap-6 md:grid-cols-3">
           {qrItems.map((item) => (
             <article
               key={item.title}
-              className="group rounded-2xl border border-[#b1914f33] bg-black/35 p-6 backdrop-blur-sm transition hover:border-[#b1914f77] hover:bg-black/50"
-            >
+              className="group rounded-2xl border border-[#b1914f33] bg-black/35 p-6 backdrop-blur-sm transition hover:border-[#b1914f77] hover:bg-black/50">
               <div className="flex items-center justify-between gap-6">
                 <div className="space-y-3">
                   <h2 className="text-sm tracking-[0.25em] text-[#d5be8a] uppercase">{item.title}</h2>
