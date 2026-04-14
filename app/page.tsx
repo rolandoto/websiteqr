@@ -46,6 +46,11 @@ const qrItems: QrItem[] = [
     href: "https://zelvanegra.vercel.app/minibar.png",
     hint: "Atención en línea para solicitudes inmediatas.",
   },
+   {
+    title: "Reglas",
+    href: "https://zelvanegra.vercel.app/reglas.png",
+    hint: "Atención en línea para solicitudes inmediatas.",
+  },
 ];
 
 const serviceItems: ServiceItem[] = [
