@@ -74,8 +74,8 @@ const serviceItems: ServiceItem[] = [
   },
   {
     icon: "🧖",
-    title: "Spa & Masajes",
-    subtitle: "9:00 am–8:00 pm",
+    title: "Spa & Masajes y Limpieza faciales",
+    subtitle: "10:00am– 7:00 pm",
     description: "Reservación previa recomendada para terapias y rituales.",
   },
   {
