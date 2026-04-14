@@ -63,7 +63,7 @@ const serviceItems: ServiceItem[] = [
   {
     icon: "🍽️",
     title: "Restaurante Ragazzi tradicion",
-    subtitle: "Desayuno 6:30–10:30 · Almuerzo 12:00–3:00 · Cena 6:00–10:00",
+    subtitle: "Desayuno 7:00–9:30 · 12 pm - 9:30 Dom-jue 12 pm- 11 pm Vie-Sab",
     description: "Opciones locales e internacionales con menú de temporada.",
   },
   {
