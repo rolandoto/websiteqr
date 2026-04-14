@@ -32,7 +32,7 @@ const qrItems: QrItem[] = [
     hint: "Información general, políticas y mapas.",
   },
   {
-    title: "Span hands of gold massage",
+    title: "Spa Hands of gold massage",
     href: "https://www.handsofgoldmassagemed.com",
     hint: "Reservas, transporte y experiencias locales.",
   },
