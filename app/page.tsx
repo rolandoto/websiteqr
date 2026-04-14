@@ -160,7 +160,7 @@ export default function Home() {
         </section>
 
         <footer className="border-t border-white/10 pt-6 text-center text-xs tracking-[0.25em] text-zinc-500">
-          MEDELLÍN · COLOMBIA · HOTEL COCO
+          MEDELLÍN · COLOMBIA · HOTEL ZELVA NEGRA
         </footer>
       </main>
     </div>
