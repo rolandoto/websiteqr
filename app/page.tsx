@@ -34,22 +34,22 @@ const qrItems: QrItem[] = [
   {
     title: "Spa Hands of gold massage",
     href: "https://www.handsofgoldmassagemed.com",
-    hint: "Reservas, transporte y experiencias locales.",
+    hint: "Spa y masajes para relajación y bienestar durante tu estadía.",
   },
   {
     title: "Restaurante Ragazzi tradicion",
     href: "https://ragazzitradicion.com",
-    hint: "Atención en línea para solicitudes inmediatas.",
+    hint: "Menú, reservas y experiencias gastronómicas en el restaurante del hotel.",
   },
    {
     title: "Minibar",
     href: "https://zelvanegra.vercel.app/minibar.png",
-    hint: "Atención en línea para solicitudes inmediatas.",
+    hint: "Opciones premium disponibles en tu habitación para disfrutar a cualquier hora.",
   },
    {
     title: "Reglas",
     href: "https://zelvanegra.vercel.app/reglas.png",
-    hint: "Atención en línea para solicitudes inmediatas.",
+    hint: "Reglas del hotel para una estadía placentera.",
   },
 ];
 
